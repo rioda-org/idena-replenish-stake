@@ -27992,7 +27992,7 @@ Window.Wblock3 = function () {
         signature
     );
     let rawTX = '0x' + tx.toHex();
-	document.getElementById('link').innerHTML = '<a href="https://app.idena.io/dna/raw?tx='+rawTX+'&callback_format=html&callback_url=https://idena.site/idena-replenish-stake/" target="_blank">Open Idena to sign and send the transaction.</a> <br><br> After you have confirmed transaction in Idena, wait a minute for transaction is completed.';
+	document.getElementById('link').innerHTML = '<a href="https://app.idena.io/dna/raw?tx='+rawTX+'&callback_format=html&callback_url=https://idena.site/idena-replenish-stake/" target="_blank" style="color: rgb(88, 166, 255);">Click here to open Idena and confirm the transaction.</a>';
 }
 
 
