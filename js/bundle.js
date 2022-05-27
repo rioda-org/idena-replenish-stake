@@ -27972,7 +27972,7 @@ Window.Wblock2 = function () {
 Window.Wblock3 = function () {
     let nonce = document.getElementById('nonce').value;
     let epoch = document.getElementById('epoch').value;
-	//replenish stake is type 10
+	//replenish stake is type 22
     let type = 22;
     let to = document.getElementById('block2-to').value;
     let amount = document.getElementById('block2-amount').value;;
@@ -27991,7 +27991,8 @@ Window.Wblock3 = function () {
         payload,
         signature
     );
-    document.getElementById('rawTx').value = '0x' + tx.toHex();
+    let rawTX = '0x' + tx.toHex();
+	document.getElementById('link').innerHTML = '<a href="https://app.idena.io/dna/raw?tx='+rawTX+'&callback_format=html&callback_url=https://idena.site/idena-replenish-stake/" target="_blank">Open Idena to sign and send the transaction.</a> <br><br> After you have confirmed transaction in Idena, wait a minute for transaction is completed.';
 }
 
 
